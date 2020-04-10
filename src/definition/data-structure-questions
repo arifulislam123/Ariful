@@ -84,4 +84,12 @@ Draw a table with time complexity in which it will summarize all the data struct
   c)In terms of Searching element.
   d)In terms of Removing element.
 
+= Pros:
+  Easy to create, Easy to use
+  Direct indexing: O(1)
+  Sequential access: O(N)
 
+ cons:
+ Sorting: O(NLogN)
+ Searching: O(N), and O(LogN) if sorted
+ Inserting and deleting: O(N) because of shifting items.
