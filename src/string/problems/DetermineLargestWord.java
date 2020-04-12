@@ -5,22 +5,23 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class DetermineLargestWord {
-    public static void main(String[] args) {
-        /*
-         Implement to Find the length and longest word in the given sentence below.
-         Should return "10 biological".
-         */
-        String s="Human brain is a biological learning machine";
-        Map<Integer, String> wordNLength = findTheLargestWord(s);
-        //implement
-
+    public static String getLongestString(String[] array) {
+        int maxLength = 0;
+        String longestString = null;
+        for (String s : array) {
+            if (s.length() > maxLength) {
+                maxLength = s.length();
+                longestString = s;
+            }
+        }
+        String longestString1 = longestString;
+        return longestString1;
     }
 
-    public static Map<Integer, String> findTheLargestWord(String wordGiven){
-        Map<Integer, String> map = new HashMap<Integer, String>();
-        String st = "";
-        //implement
+    public static void main(String[] args) {
+        String[] largeword = new String[]{"Human", "a", "biological", "brain", "is", "learning", "machine"};
+        String longestString = getLongestString(largeword);
+        System.out.format("longest string: '%s'\n", longestString);
 
-        return map;
     }
 }

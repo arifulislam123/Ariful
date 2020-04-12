@@ -8,7 +8,30 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+
+
+		int x=100, y=10;
+		while (x>=90){
+			System.out.print(x+ " ");
+			x--;
+		}
+		x++;
+		for(int i=0; i<y;i++){
+			System.out.print(x-2+ " ");
+			x -=2;
+		}
+		for(int i=0;i<y;i++){
+			System.out.print(x-3+ " ");
+			x -=3;
+		}
+		for(int i=0;i<y;i++){
+			if(i<9){
+				System.out.print(x-4+ " ");
+				x -=4;
+			}else
+				System.out.print(x -=4);
+		}
+
 
 
 	}
